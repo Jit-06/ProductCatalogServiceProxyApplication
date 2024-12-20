@@ -3,13 +3,13 @@ package com.example.productcatalogserviceproxy.model;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
-public class Product {
+public class Category extends BaseModel{
 
-    private String title;
+    private String name;
     private String description;
-    private Double price;
-    private String imageUrl;
-    private Category category;
+    private List<Product> product;
 }
