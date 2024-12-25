@@ -1,16 +1,15 @@
-package com.example.productcatalogserviceproxy.model;
+package com.example.productcatalogserviceproxy.dto;
 
-public class Product extends BaseModel {
-
-    private Long id;
+public class ProductDto {
+    private long id;
     private String title;
     private String description;
-    private Double price;
-    private String imageUrl;
-    private Category category;
+    private double price;
+    private String image;
+    private String category;
 
     // Getters
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
@@ -22,20 +21,20 @@ public class Product extends BaseModel {
         return description;
     }
 
-    public Double getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public String getImage() {
+        return image;
     }
 
-    public Category getCategory() {
+    public String getCategory() {
         return category;
     }
 
     // Setters
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -47,27 +46,27 @@ public class Product extends BaseModel {
         this.description = description;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setImage(String image) {
+        this.image = image;
     }
 
-    public void setCategory(Category category) {
+    public void setCategory(String category) {
         this.category = category;
     }
 
     // toString Method
     @Override
     public String toString() {
-        return "Product{" +
+        return "ProductDto{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
                 ", price=" + price +
-                ", imageUrl='" + imageUrl + '\'' +
+                ", image='" + image + '\'' +
                 ", category=" + category +
                 '}';
     }
